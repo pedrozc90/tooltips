@@ -1,4 +1,4 @@
-FILENAME := actions-$(REF_NAME).zip
+FILENAME := tooltips.zip
 EXCLUDES := '.git/*' '.github/*' '.gitignore' '.gitattributes' Makefile
 
 .PHONY: changelog
@@ -7,7 +7,7 @@ changelog:
 
 .PHONY: zip
 zip:
-	@echo "Creating $(TAG) zip file..."
+	@echo "Creating zip file..."
 	@zip -r $(FILENAME) * -x $(addprefix -x ,$(EXCLUDES))
 	@echo "$(FILENAME) created successfully."
 

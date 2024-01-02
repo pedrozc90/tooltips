@@ -1,6 +1,6 @@
 ## Interface: 20504
 ## Author: Luaerror
-## Version: 0.0.0
+## Version: 1.0.0
 ## Title: |cffb3ff19Tooltips|r
 ## Notes: Displays extra data on tooltips
 ## Website: https://github.com/pedrozc90/Tooltips

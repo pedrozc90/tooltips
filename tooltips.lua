@@ -86,7 +86,14 @@ local function addLine(tooltip, id, kind)
     tooltip:AddDoubleLine(left, right)
 
     if kind == kinds.spell then
-        iconId = select(3, GetSpellInfo(id))
+        if C_Spell then
+            local info = C_Spell.GetSpellInfo(id)
+            if info then
+                iconId = info.icon
+            end
+        else
+            iconId = select(3, GetSpellInfo(id))
+        end
         if iconId then addLine(tooltip, iconId, kinds.icon) end
     elseif kind == kinds.item then
         iconId = C_Item.GetItemIconByID(id)

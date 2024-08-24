@@ -1,6 +1,6 @@
-## Interface: 20504
+## Interface: 11503, 20504, 30403, 40400, 100200, 110002
 ## Author: Luaerror
-## Version: 1.0.0
+## Version: 1.1.0
 ## Title: |cffb3ff19Tooltips|r
 ## Notes: Displays extra data on tooltips
 ## Website: https://github.com/pedrozc90/Tooltips

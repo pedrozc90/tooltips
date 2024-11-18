@@ -268,7 +268,7 @@ function Tooltips:EnableVendorPrice()
         elseif AtlasLoot and VP:IsShown(_G["AtlasLoot_GUI-Frame"]) then
             AddCompactVendorPrice(self)
         else -- Chatter, Prat: check for active chat windows
-            local mouseFocus = GetMouseFocus()
+            local mouseFocus = GetMouseFocus and GetMouseFocus()
             if mouseFocus and mouseFocus:GetObjectType() == "FontString" then
                 for i = 1, FCF_GetNumActiveChatFrames() do
                     if _G["ChatFrame"..i]:IsMouseOver() then
